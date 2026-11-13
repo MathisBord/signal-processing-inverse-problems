@@ -1,0 +1,47 @@
+[
+  {
+    "path": "images/boat.png",
+    "original_filename": "boat.png",
+    "sha256": "4ae40ec4c08321b97ad8208e7f7951be1bf9651da0f67be41ac82397986b0daa"
+  },
+  {
+    "path": "images/chessboard.png",
+    "original_filename": "chessboard.png",
+    "sha256": "b74ec0687277812965f72c380d2da3ce3f185691c776460a580436fdc6974998"
+  },
+  {
+    "path": "audio/separation/bird.wav",
+    "original_filename": "bird.wav",
+    "sha256": "c51ad2175f89bafc33a4ff4880253331b82bda8574fbd0e1944d2f86ef7f6d28"
+  },
+  {
+    "path": "audio/separation/female.wav",
+    "original_filename": "female.wav",
+    "sha256": "f7b18d4317365e6959ece0110b8807d525941105048798ac7afe64dacbe3aba8"
+  },
+  {
+    "path": "audio/separation/male.wav",
+    "original_filename": "male.wav",
+    "sha256": "f1e7a5bb22ef26de7a72e6a61b9f62e9219e2020cae68300bc5fb073de3aac3f"
+  },
+  {
+    "path": "audio/time_frequency/bird.wav",
+    "original_filename": "bird.wav",
+    "sha256": "c51ad2175f89bafc33a4ff4880253331b82bda8574fbd0e1944d2f86ef7f6d28"
+  },
+  {
+    "path": "audio/time_frequency/glockenspiel_mono.wav",
+    "original_filename": "glockenspiel_mono.wav",
+    "sha256": "0b9222e8eb06524ce5c55903f5ff85f89c0fee35befa950fad3c63c6050e0de2"
+  },
+  {
+    "path": "audio/time_frequency/desactive_mono.wav",
+    "original_filename": "desactive_mono.wav",
+    "sha256": "45590dd014a2d2650b42028ee49605ffa24119ffabbacb6dddb9da8df5c162c7"
+  },
+  {
+    "path": "audio/time_frequency/signal_2sinus.mat",
+    "original_filename": "signal_2sinus.mat",
+    "sha256": "50baec8f94cca14c5565746eb0f819b6a32fc2d7743daa56bb7abc846c392fb9"
+  }
+]

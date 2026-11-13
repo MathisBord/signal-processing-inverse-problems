@@ -1,0 +1,10 @@
+# Tested with Python 3.12.14; interactive JupyterLab is optional.
+numpy==2.3.5
+scipy==1.18.1
+matplotlib==3.11.2
+PyWavelets==1.10.0
+Pillow==13.0.0
+nbformat==5.11.1
+ipython==9.18.1
+pytest==9.2.0
+setuptools==84.2.1

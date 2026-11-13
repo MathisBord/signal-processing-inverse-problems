@@ -1,0 +1,29 @@
+{
+  "noisy_psnr_db": 19.988046805409038,
+  "noise_sigma": 0.1,
+  "seed": 1234,
+  "data_range": 1.0,
+  "image_shape": [
+    512,
+    512
+  ],
+  "best": {
+    "dwt": {
+      "transform": "dwt",
+      "wavelet": "sym8",
+      "level": 2,
+      "threshold": 0.4,
+      "noise_sigma": 0.1,
+      "psnr_db": 26.224969689489363
+    },
+    "swt": {
+      "transform": "swt",
+      "wavelet": "sym8",
+      "level": 5,
+      "threshold": 0.3,
+      "noise_sigma": 0.1,
+      "psnr_db": 28.368772897244856
+    }
+  },
+  "selection": "Oracle grid selection on this one known reference; not held-out performance."
+}

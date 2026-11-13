@@ -1,0 +1,4 @@
+source,true_degrees,estimated_degrees,absolute_error_degrees
+Bird,29.999999999999996,28.285714285714285,1.7142857142857122
+Female voice,90.0,90.0,0.0
+Male voice,150.0,151.71428571428572,1.7142857142857058

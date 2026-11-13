@@ -1,0 +1,225 @@
+{
+  "time_frequency": {
+    "audio_sample_rate_hz": 44100,
+    "tone_sample_rate_hz": 4096,
+    "tone_frequencies_hz": [
+      400,
+      424
+    ],
+    "stft_relative_roundtrip_error": 2.1242614876939428e-16,
+    "resolutions": [
+      {
+        "window_samples": 64,
+        "duration_ms": 15.625,
+        "bin_spacing_hz": 64.0,
+        "tone_spacing_hz": 24.0
+      },
+      {
+        "window_samples": 128,
+        "duration_ms": 31.25,
+        "bin_spacing_hz": 32.0,
+        "tone_spacing_hz": 24.0
+      },
+      {
+        "window_samples": 256,
+        "duration_ms": 62.5,
+        "bin_spacing_hz": 16.0,
+        "tone_spacing_hz": 24.0
+      },
+      {
+        "window_samples": 512,
+        "duration_ms": 125.0,
+        "bin_spacing_hz": 8.0,
+        "tone_spacing_hz": 24.0
+      },
+      {
+        "window_samples": 1024,
+        "duration_ms": 250.0,
+        "bin_spacing_hz": 4.0,
+        "tone_spacing_hz": 24.0
+      }
+    ]
+  },
+  "wavelets": {
+    "noisy_psnr_db": 19.988046805409038,
+    "noise_sigma": 0.1,
+    "seed": 1234,
+    "data_range": 1.0,
+    "image_shape": [
+      512,
+      512
+    ],
+    "best": {
+      "dwt": {
+        "transform": "dwt",
+        "wavelet": "sym8",
+        "level": 2,
+        "threshold": 0.4,
+        "noise_sigma": 0.1,
+        "psnr_db": 26.224969689489363
+      },
+      "swt": {
+        "transform": "swt",
+        "wavelet": "sym8",
+        "level": 5,
+        "threshold": 0.3,
+        "noise_sigma": 0.1,
+        "psnr_db": 28.368772897244856
+      }
+    },
+    "selection": "Oracle grid selection on this one known reference; not held-out performance."
+  },
+  "separation": {
+    "fs": 15000,
+    "samples": 16384,
+    "window_samples": 128,
+    "overlap_samples": 32,
+    "energetic_bin_ratio": 0.1,
+    "discard_percentile": 50,
+    "directions": [
+      {
+        "source": "Bird",
+        "true_degrees": 29.999999999999996,
+        "estimated_degrees": 28.285714285714285,
+        "absolute_error_degrees": 1.7142857142857122
+      },
+      {
+        "source": "Female voice",
+        "true_degrees": 90.0,
+        "estimated_degrees": 90.0,
+        "absolute_error_degrees": 0.0
+      },
+      {
+        "source": "Male voice",
+        "true_degrees": 150.0,
+        "estimated_degrees": 151.71428571428572,
+        "absolute_error_degrees": 1.7142857142857058
+      }
+    ],
+    "scores": [
+      {
+        "method": "binary",
+        "source": "Bird",
+        "si_sdr_db": 8.565609941810347,
+        "best_mixture_si_sdr_db": -0.020394182974685655,
+        "improvement_db": 8.586004124785033
+      },
+      {
+        "method": "binary",
+        "source": "Female voice",
+        "si_sdr_db": 3.0196588837291065,
+        "best_mixture_si_sdr_db": 2.9936009295481023,
+        "improvement_db": 0.026057954181004206
+      },
+      {
+        "method": "binary",
+        "source": "Male voice",
+        "si_sdr_db": 2.98947780171759,
+        "best_mixture_si_sdr_db": -0.020394182974683237,
+        "improvement_db": 3.0098719846922735
+      },
+      {
+        "method": "split_l1",
+        "source": "Bird",
+        "si_sdr_db": 7.921495638633084,
+        "best_mixture_si_sdr_db": -0.020394182974685655,
+        "improvement_db": 7.94188982160777
+      },
+      {
+        "method": "split_l1",
+        "source": "Female voice",
+        "si_sdr_db": 7.4153416887458725,
+        "best_mixture_si_sdr_db": 2.9936009295481023,
+        "improvement_db": 4.42174075919777
+      },
+      {
+        "method": "split_l1",
+        "source": "Male voice",
+        "si_sdr_db": 7.213933826445235,
+        "best_mixture_si_sdr_db": -0.020394182974683237,
+        "improvement_db": 7.234328009419918
+      }
+    ],
+    "direction_sensitivity": [
+      {
+        "energy_ratio": 0.0,
+        "mean_angle_error_degrees": 1.1428571428571395
+      },
+      {
+        "energy_ratio": 0.08,
+        "mean_angle_error_degrees": 1.1428571428571395
+      },
+      {
+        "energy_ratio": 0.1,
+        "mean_angle_error_degrees": 1.1428571428571395
+      },
+      {
+        "energy_ratio": 0.15,
+        "mean_angle_error_degrees": 1.1428571428571395
+      },
+      {
+        "energy_ratio": 0.2,
+        "mean_angle_error_degrees": 1.1428571428571395
+      }
+    ],
+    "mean_si_sdr_db": {
+      "binary": 4.8582488757523485,
+      "split_l1": 7.516923717941398
+    }
+  },
+  "restoration": {
+    "input_snr_db": 20,
+    "noise_seed": 0,
+    "mask_seed": 42,
+    "observed_fraction": 0.0993194580078125,
+    "noisy_psnr_db": 24.843569849323302,
+    "tikhonov_psnr_db": 24.447209442642958,
+    "inpainting_psnr_db": 24.854514776474993,
+    "inpainting_missing_psnr_db": 24.400222581366748,
+    "observed_pixel_max_error": 0.0,
+    "denoising_iterations": 100,
+    "inpainting_iterations": 300,
+    "denoising_objective_monotone": true,
+    "inpainting_objective_monotone": true,
+    "regularization_sweep": [
+      {
+        "regularization": 0.05,
+        "iterations": 100,
+        "psnr_db": 26.30033199786197,
+        "mse": 0.0023440496168175362
+      },
+      {
+        "regularization": 0.2,
+        "iterations": 100,
+        "psnr_db": 28.677912865611717,
+        "mse": 0.0013558408464133622
+      },
+      {
+        "regularization": 1,
+        "iterations": 100,
+        "psnr_db": 29.122122142254895,
+        "mse": 0.0012240179473757776
+      },
+      {
+        "regularization": 8,
+        "iterations": 100,
+        "psnr_db": 24.447209442642958,
+        "mse": 0.003591526338922546
+      }
+    ]
+  },
+  "inputs": "Original course image and recordings",
+  "source_header_sample_rates_hz": [
+    44100,
+    16000,
+    16000
+  ],
+  "environment": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "PyWavelets": "1.10.0",
+    "Pillow": "13.0.0",
+    "python": "3.12.14"
+  }
+}

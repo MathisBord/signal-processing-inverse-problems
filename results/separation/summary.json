@@ -1,0 +1,98 @@
+{
+  "fs": 15000,
+  "samples": 16384,
+  "window_samples": 128,
+  "overlap_samples": 32,
+  "energetic_bin_ratio": 0.1,
+  "discard_percentile": 50,
+  "directions": [
+    {
+      "source": "Bird",
+      "true_degrees": 29.999999999999996,
+      "estimated_degrees": 28.285714285714285,
+      "absolute_error_degrees": 1.7142857142857122
+    },
+    {
+      "source": "Female voice",
+      "true_degrees": 90.0,
+      "estimated_degrees": 90.0,
+      "absolute_error_degrees": 0.0
+    },
+    {
+      "source": "Male voice",
+      "true_degrees": 150.0,
+      "estimated_degrees": 151.71428571428572,
+      "absolute_error_degrees": 1.7142857142857058
+    }
+  ],
+  "scores": [
+    {
+      "method": "binary",
+      "source": "Bird",
+      "si_sdr_db": 8.565609941810347,
+      "best_mixture_si_sdr_db": -0.020394182974685655,
+      "improvement_db": 8.586004124785033
+    },
+    {
+      "method": "binary",
+      "source": "Female voice",
+      "si_sdr_db": 3.0196588837291065,
+      "best_mixture_si_sdr_db": 2.9936009295481023,
+      "improvement_db": 0.026057954181004206
+    },
+    {
+      "method": "binary",
+      "source": "Male voice",
+      "si_sdr_db": 2.98947780171759,
+      "best_mixture_si_sdr_db": -0.020394182974683237,
+      "improvement_db": 3.0098719846922735
+    },
+    {
+      "method": "split_l1",
+      "source": "Bird",
+      "si_sdr_db": 7.921495638633084,
+      "best_mixture_si_sdr_db": -0.020394182974685655,
+      "improvement_db": 7.94188982160777
+    },
+    {
+      "method": "split_l1",
+      "source": "Female voice",
+      "si_sdr_db": 7.4153416887458725,
+      "best_mixture_si_sdr_db": 2.9936009295481023,
+      "improvement_db": 4.42174075919777
+    },
+    {
+      "method": "split_l1",
+      "source": "Male voice",
+      "si_sdr_db": 7.213933826445235,
+      "best_mixture_si_sdr_db": -0.020394182974683237,
+      "improvement_db": 7.234328009419918
+    }
+  ],
+  "direction_sensitivity": [
+    {
+      "energy_ratio": 0.0,
+      "mean_angle_error_degrees": 1.1428571428571395
+    },
+    {
+      "energy_ratio": 0.08,
+      "mean_angle_error_degrees": 1.1428571428571395
+    },
+    {
+      "energy_ratio": 0.1,
+      "mean_angle_error_degrees": 1.1428571428571395
+    },
+    {
+      "energy_ratio": 0.15,
+      "mean_angle_error_degrees": 1.1428571428571395
+    },
+    {
+      "energy_ratio": 0.2,
+      "mean_angle_error_degrees": 1.1428571428571395
+    }
+  ],
+  "mean_si_sdr_db": {
+    "binary": 4.8582488757523485,
+    "split_l1": 7.516923717941398
+  }
+}

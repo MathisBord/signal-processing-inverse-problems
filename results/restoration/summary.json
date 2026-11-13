@@ -1,0 +1,41 @@
+{
+  "input_snr_db": 20,
+  "noise_seed": 0,
+  "mask_seed": 42,
+  "observed_fraction": 0.0993194580078125,
+  "noisy_psnr_db": 24.843569849323302,
+  "tikhonov_psnr_db": 24.447209442642958,
+  "inpainting_psnr_db": 24.854514776474993,
+  "inpainting_missing_psnr_db": 24.400222581366748,
+  "observed_pixel_max_error": 0.0,
+  "denoising_iterations": 100,
+  "inpainting_iterations": 300,
+  "denoising_objective_monotone": true,
+  "inpainting_objective_monotone": true,
+  "regularization_sweep": [
+    {
+      "regularization": 0.05,
+      "iterations": 100,
+      "psnr_db": 26.30033199786197,
+      "mse": 0.0023440496168175362
+    },
+    {
+      "regularization": 0.2,
+      "iterations": 100,
+      "psnr_db": 28.677912865611717,
+      "mse": 0.0013558408464133622
+    },
+    {
+      "regularization": 1,
+      "iterations": 100,
+      "psnr_db": 29.122122142254895,
+      "mse": 0.0012240179473757776
+    },
+    {
+      "regularization": 8,
+      "iterations": 100,
+      "psnr_db": 24.447209442642958,
+      "mse": 0.003591526338922546
+    }
+  ]
+}
